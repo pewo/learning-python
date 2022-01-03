@@ -28,9 +28,19 @@ class Point:
         self.y = y
 
     def reset(self) -> None:
+        """
+        Reset the point back ro the gemetrix origin: 0, 0
+        """
         self.move(0,0)
 
     def calculate_distance(self, other: "Point") -> float:
+        """
+        Calculate the Euclidean distance from this point
+        to a second point passed as parameter
+
+        :param other: Point instance
+        :return: float distance
+        """
         return math.hypot(self.x - other.x, self.y - other.y)
 
 
