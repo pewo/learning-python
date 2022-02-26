@@ -1,0 +1,9 @@
+# ntp_servers to be used as time servers
+domain:
+ntp_servers: array 
+dns_server: array   # dns
+testing: dict=apa,bepa,cepa
+testing2: dict=
+mystring: 
+myint: integer
+myfloat: float
